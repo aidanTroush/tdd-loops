@@ -11,9 +11,14 @@
  * echo("test", 1); // "test"
  */
 export function echo(word, n) {
-  // TODO
+  if (n > 1) {
+    return word.repeat(n);
+  } else if (n === 1) {
+    return word;
+  } else if ((word = "" || n === 0 || n < 0)) {
+    return "";
+  }
 }
-
 /**
  * @param {string} word - The word to repeat.
  * @param {number} n - The number of times to repeat the word.
