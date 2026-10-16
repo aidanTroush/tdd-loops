@@ -26,7 +26,7 @@ export function echo(word, n) {
  *
  * @example
  * echoWithSpace("badger", 3); // "badger badger badger"
- * @example
+ * @exampleq
  * echoWithSpace("a", 2); // "a a"
  * @example
  * echoWithSpace("test", 1); // "test"
