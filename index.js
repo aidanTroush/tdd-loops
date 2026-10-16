@@ -32,7 +32,11 @@ export function echo(word, n) {
  * echoWithSpace("test", 1); // "test"
  */
 export function echoWithSpace(word, n) {
-  // TODO
+  if (word === "" || n <= 0) {
+    return "";
+  }
+
+  return Array(n).fill(word).join(" ");
 }
 
 /**
